@@ -45,7 +45,7 @@ public class Service {
 
     public String getWeather(String city) {
         String weather = "";
-        String key="6906d463555ba5e7a29785be0ba65dd1";
+        String key="";
         String loc=city+","+locale.getCountry();
         System.out.println(loc);
 
@@ -79,7 +79,7 @@ public class Service {
         Double rate = 0.0;
 
         Currency curr = Currency.getInstance(locale);
-        String key="f12e9f72a450cc560d1ef2f1";
+        String key="";
         String locCur=curr.getCurrencyCode();
 
         String urls="https://v6.exchangerate-api.com/v6/"+key+"/latest/"+locCur;
